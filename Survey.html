@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="myDIV1"></div>
+      <center><h1>Student Survey Form</h1></body></center>
+    </div>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="fname" name="First Name" placeholder="Enter your first name" required autofocus>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="lname" name="Last name" placeholder="Enter your last name" required autofocus>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="address">Address:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="address" name="Address" placeholder="Street address or P.O.Box">
+            <input type="text" id="address" name="Address" placeholder="Apt, Suite, Unit, Building">
+            <input type="text" id="address" name="Address" placeholder="City">
+            <input type="text" id="address" name="Address" placeholder="State">
+            <input type="text" id="address" name="Address" placeholder="Zip">
+          </div>
+        </div> 
+
+        <div class="row">
+          <div class="col-25">
+            <label for="contact">Contact Number:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="contact" name="contact number" placeholder="Enter your number" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="Email">Email:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="Email" name="Email" placeholder="@gmu.edu" required>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-25">
+            <label for="dos">Date of Survey:</label>
+          </div>
+          <div class="col-50">
+            <input type="date" id="dos" name="Date of Survey" required>  
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">What did you like the most about the campus?</label>
+          </div>
+          <div class="col-50">
+            <input type="checkbox" id="item1" name="like" value="">
+            <label for="item1"> Students </label><br>
+            <input type="checkbox" id="item2" name="like" value="">
+            <label for="item2"> Location </label><br>
+            <input type="checkbox" id="item3" name="like" value="">
+            <label for="item3"> Campus</label><br>
+            <input type="checkbox" id="item4" name="like" value="">
+            <label for="item4"> Atmopshere </label><br>
+            <input type="checkbox" id="item5" name="like" value="">
+            <label for="item5"> Dorms </label><br>
+            <input type="checkbox" id="item6" name="like" value="">
+            <label for="item6"> Sports </label><br>  
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">How you came to know and got interested in University?</label>
+          </div>
+          <div class="col-50">
+            <label class="block"><input type="radio" name="radgroup" value="friends">Friends</label>
+            <label class="block"><input type="radio" name="radgroup" value="television">Television</label>
+            <label class="block"><input type="radio" name="radgroup" value="internet">Internet</label>
+            <label class="block"><input type="radio" name="radgroup" value="other">Other</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">How likely would you recommend George Mason University?</label>
+          </div>
+          <div class="col-50">
+            <label for="recommend"></label>
+            <input list="recommends" name="browser" id="recommend" placeholder="Very Likely/Likely/Unlikely" required>
+              <datalist id="recommends">
+                <option value="Very Likely">Very Likely</option>
+                <option value="Likely"></option>
+                <option value="Unlikely"></option>
+              </datalist> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Raffle">Enter atleast ten comma separated numbers ranging from 1 through 100 in the Raffle field:</label>
+          </div>
+          <div class="col-50">
+            <input type="text" id="Raffle" name="Raffle" placeholder="Ex: 1,3,7,19" required>  
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Additional Comments</label>
+          </div>
+          <div class="col-50">
+            <textarea id="subject" name="subject" placeholder="Type here.." style="height:200px"></textarea>
+          </div>
+        </div>
+    
+        <div id="submitbutton">
+          <button type="submit" value="Submit">Submit</button>
+          <button type="cancel" value="Cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="fixed">
+      <a href="https://www2.gmu.edu/">
+        <img class="d-block mx-auto mb-4" class="center" src="/Users/prashanthk3/Documents/GMU/Sem - 2/SWE645/HW/Solutions/HW1/GMU_logo.png" width="200" height="150">
+      </a>
+    </div>
+  </body>
+</html>
+
